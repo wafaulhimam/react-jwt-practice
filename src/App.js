@@ -71,10 +71,11 @@ function App() {
   }
 
   useEffect(() => {
-    if(token) {
+    if(localStorage.getItem('dataku')) {
       setUserData(JSON.parse(localStorage.getItem('dataku')));
     }
   }, [])
+
 
   // console.log('regData =>', regData);
   // console.log('loginData = >', loginData);
